@@ -1,0 +1,38 @@
+
+
+/* table properties */
+
+.row{
+    margin-left: 130px;
+    margin-top: 100px;
+}
+input{
+    width: 150%;
+    height: 35px;
+
+}
+
+button{
+    color: white;
+    font-weight: bolder;
+}
+#end{
+    margin-left: 200px;
+    width: 80%;
+    background-color: blue;
+    font-weight: bolder;
+}
+
+.table{
+         
+    margin-top: 30px;
+    width: 55%;
+    margin-left: 320px;
+    background-color: turquoise;
+}
+td{
+    height: 40px;
+    background-color:wheat;
+}
+
+

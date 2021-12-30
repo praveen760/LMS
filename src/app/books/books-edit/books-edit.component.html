@@ -1,0 +1,96 @@
+<form  (ngSubmit)=" myForm.valid && onSubmit(myForm)" #myForm="ngForm">
+  
+    <div class="form-group" id="one">
+      <label>ISBN </label>
+      <input type="text" 
+             class="form-control"
+             placeholder="ISBN"
+             id="isbn"
+             name="isbn"
+             ngModel
+             #isbn="ngModel"
+             required
+             >
+             </div>
+      <div >
+       <span *ngIf="!isbn.valid && myForm.submitted ">please enter ISBN</span>
+      </div>
+    
+  <br>
+  
+    <div  class="form-group" id="one">
+      <label>BookName</label>
+      <input type="text"
+             class="form-control"
+             placeholder="enter bookname"
+             id="bookname"
+             name="bookname"
+             ngModel
+             #bookname="ngModel"
+             required
+      >
+      </div>
+  
+      <div *ngIf="!bookname.valid && myForm.submitted">
+        <span>please enter bookname</span>
+       </div>
+  
+    <br>
+  
+    <div  class="form-group" id="one">
+      <label>Author</label>
+      <input type="text"
+             class="form-control"
+             placeholder="enter author"
+             id="author"
+             name="author"
+             ngModel
+             #author="ngModel"
+             required
+             
+            >
+            </div>
+  
+      <div *ngIf="!author.valid && myForm.submitted">
+        <span>please enter author</span>
+       </div>
+    <br>
+  
+    <div  class="form-group" id="one">
+      <label>Publisher</label>
+      <input type="text"
+             class="form-control"
+             placeholder="enter Publisher"
+             id="publisher"
+             password="publisher"
+             name="publisher"
+             ngModel
+             #publisher="ngModel"
+             required
+             >
+             </div>
+
+      <div *ngIf="!publisher.valid && myForm.submitted">
+        <span>please enter publisher</span>
+       </div>
+    <br>
+
+    <div  class="form-group" id="one">
+        <label>Quantity</label>
+        <input type="number"
+               class="form-control"
+               placeholder="enter Quantity"
+               id="quantity"
+               password="quantity"
+               name="quantity"
+               ngModel
+               #quantity="ngModel"
+               required
+               >
+               </div>
+        <div *ngIf="!quantity.valid && myForm.submitted">
+          <span>please enter Quantity</span>
+         </div>
+      <br>
+<button type="submit" class="btn btn-primary" id="btn">Submit</button>   
+ </form>

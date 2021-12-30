@@ -1,0 +1,37 @@
+span{
+    color: red;
+    margin-left: 160px;
+}
+#one{
+    display: flex;
+}
+input{
+    width:80%;
+}
+label{
+    margin-left: 20px;
+}
+#isbn{
+     margin-left: 100px;
+}
+#bookname{
+    margin-left: 60px;
+
+}
+#author{
+    margin-left: 90px;
+
+}
+#publisher{
+    margin-left: 70px;
+
+}
+#quantity{
+    margin-left: 75px;
+
+}
+#btn{
+    margin-left: 670px;
+    width: 10%;
+    height: 45px;
+}

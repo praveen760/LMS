@@ -1,0 +1,97 @@
+<form  (ngSubmit)="myForm.valid && onSubmit(myForm)" #myForm="ngForm">
+  
+    <div class="form-group" id="one">
+      <label>UserName </label>
+      <input type="text" 
+             class="form-control"
+             placeholder="UserName"
+             id="username"
+             name="username"
+             ngModel
+             #username="ngModel"
+             required
+             >
+             </div>
+      <div >
+       <span *ngIf="!username.valid && myForm.submitted">please enter username</span>
+      </div>
+    
+  <br>
+  
+    <div  class="form-group" id="one">
+      <label>Email</label>
+      <input type="email"
+             class="form-control"
+             placeholder="enter Email"
+             id="email"
+             name="email"
+             ngModel
+             #email="ngModel"
+             required
+      >
+      </div>
+  
+      <div *ngIf="!email.valid && myForm.submitted">
+        <span>please enter email</span>
+       </div>
+  
+    <br>
+  
+    <div  class="form-group" id="one">
+      <label>Address</label>
+      <input type="text"
+             class="form-control"
+             placeholder="enter Address"
+             id="address"
+             name="address"
+             ngModel
+             #address="ngModel"
+             required
+             
+            >
+            </div>
+  
+      <div *ngIf="!address.valid && myForm.submitted">
+        <span>please enter address</span>
+       </div>
+    <br>
+  
+    <div  class="form-group" id="one">
+      <label>City</label>
+      <input type="text"
+             class="form-control"
+             placeholder="enter City"
+             id="city"
+             password="city"
+             name="city"
+             ngModel
+             #city="ngModel"
+             required
+             >
+             </div>
+
+      <div *ngIf="!city.valid && myForm.submitted">
+        <span>please enter city</span>
+       </div>
+    <br>
+
+    <div  class="form-group" id="one">
+        <label>ContactNo</label>
+        <input type="tel"
+               class="form-control"
+               placeholder="enter ContactNo"
+               id="contactno"
+               password="contactno"
+               name="contactno"
+               ngModel
+               #contactno="ngModel"
+               required
+               >
+               </div>
+        <div *ngIf="!contactno.valid && myForm.submitted">
+          <span>please enter contactno</span>
+         </div>
+      <br>
+  
+    <button class="btn btn-primary" id="btn">submit</button><br><br>
+  </form>

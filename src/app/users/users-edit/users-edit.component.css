@@ -1,0 +1,38 @@
+span{
+    color: red;
+    margin-left: 200px;
+}
+#one{
+    display: flex;
+}
+input{
+    width:80%;
+}
+label{
+    margin-left: 20px;
+}
+#username{
+     margin-left: 100px;
+}
+#email{
+    margin-left: 135px;
+
+}
+#address{
+    margin-left: 118px;
+
+}
+#city{
+    margin-left: 150px;
+
+}
+#contactno{
+    margin-left: 105px;
+
+}
+#btn{
+    margin-left: 670px;
+    width: 10%;
+    height: 45px;
+    background-color: blue;
+}

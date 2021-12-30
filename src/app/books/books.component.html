@@ -1,0 +1,38 @@
+
+<app-books-edit (bookAdded)=onbookAdded($event)></app-books-edit>
+  <!-- table items -->
+
+
+  <table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>ISBN</th>
+            <th>Book Name</th>
+            <th>author</th>
+            <th>publisher</th>
+            <th>quantity</th>
+            <th>Issused Book</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let book of books;let i=index">
+            <td>{{i+1}}</td>
+            <td>{{book.isbn}}</td>
+            <td>{{book.bookname}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.publisher}}</td>
+            <td>{{book.quantity}}</td>
+            <td></td>
+            <td>
+            <i class="glyphicon glyphicon-edit btn btn-success" 
+            (click)="edit(i,book.isbn,book.bookname,book.author,book.publisher,book.quantity)"></i>
+            </td>
+            <td>
+            <i class="glyphicon glyphicon-trash btn btn-danger"(click)=delete(i)></i>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,29 @@
+<nav class="navbar navbar-default ">
+    <div class="container-fluid bg-primary">
+        <div class="navbar-header navbar-brand">
+             <a href="#">LMS</a>
+        </div>
+
+<ul class="nav navbar-nav pull-right">
+    <li  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <a routerLink='/home'>Home</a>
+    </li>
+
+    <li  routerLinkActive="active" >
+        <a routerLink='/issused-book'>Issused-book</a>
+    </li>
+
+    <li  routerLinkActive="active" >
+        <a routerLink='/books'>Books</a>
+    </li>
+    
+    <li  routerLinkActive="active" >
+        <a routerLink='/users'>Users</a>
+    </li>
+</ul>
+
+</div> 
+</nav>
+
+<router-outlet></router-outlet>
+

@@ -1,0 +1,67 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div class="col-md-2">
+            <!-- <button class="btn btn-gray">Users  <span class="caret"></span></button> -->
+            <div class="btn-group" appDropdown>
+            <button
+            type="select"
+            class="btn btn-gray dropdown-toggle">
+            Users <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" *ngFor="let user of users">
+         <li >{{user.username}}</li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="col-md-2">
+            <!-- <button class="btn btn-gray">Books <span class="caret"></span></button> -->
+            <div class="btn-group" appDropdown>
+                <button
+                type="button"
+                class="btn btn-gray dropdown-toggle">
+                Books <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" *ngFor="let book of books">
+             <li >{{book.bookname}}</li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <input type="text" placeholder="Count">
+        </div>
+
+        <div class="col-md-4">
+            <button  id="end" class="btn btn-primary">Issused Book</button>
+        </div>
+    </div>
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Book</th>
+        </tr>
+    </thead>
+
+    <!-- <tbody *ngFor="let book of books">
+        <tr *ngFor="let user of users;let i=index">
+             <td>{{i+1}}</td>
+            <td>{{user.username}}</td>
+            <td>{{book.bookname}}</td>
+        </tr>
+    </tbody> -->
+
+    <tbody>
+        <tr *ngFor="let ibook of ibooks;let i=index">
+            <td>{{i+1}}</td>
+            <td>{{ibook.username}}</td>
+            <td>{{ibook.bookname}}</td>
+        </tr>
+    </tbody>
+</table>
+

@@ -1,0 +1,35 @@
+
+<app-users-edit (userAdded)="onuserAdded($event)"></app-users-edit>
+  <!---------------------- table --------------------------->
+
+
+  <table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>ContactNo</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let user of users;let i=index">
+            <td>{{i+1}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.city}}</td>
+            <td>{{user.contactno}}</td>
+            <td>
+             <i class="glyphicon glyphicon-edit btn btn-success"></i>
+            </td>
+            <td>
+               <i class="glyphicon glyphicon-trash btn btn-danger"(click)=delete(i)></i>
+            </td>
+        </tr>
+    </tbody>
+</table>
